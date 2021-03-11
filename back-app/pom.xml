@@ -3,8 +3,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>ru.itvitality.dhs</groupId>
-        <artifactId>dhs</artifactId>
+        <groupId>ru.itvitality.dsh</groupId>
+        <artifactId>dsh</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
@@ -31,9 +31,22 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- database -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>
+        <finalName>web-app</finalName>
+
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
